@@ -1,0 +1,126 @@
+/* font importing */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* reseting css rules */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --orange: #f78b00;
+  --blue: #00285f;
+  --gray: #ededed;
+  --Cian: rgb(122, 207, 233);
+}
+
+html,
+body {
+    background-color: white;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  height: 500px;
+}
+
+.header {
+    display: flex;
+    height: 70px;
+    background-color: black;
+    padding: 0 40px 0 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo p {
+    transition: 0.3s;
+}
+
+.logo p:hover {
+    color: var(--Cian);
+}
+
+.menu a {
+    transition: 0.3s;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: var(--Cian);
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.menu ul li {
+    padding: 0 30px;
+}
+
+.header-block {
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sobre {
+    transition: 0.6s;
+    margin: auto;
+    max-width: 700px;
+    min-height: 200px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px 10px 30px;
+    border-radius: 15px;
+    box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 10;
+}
+
+.header-block .sobre:hover {
+    background-color: var(--Cian);
+}
+
+.sobre h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+    padding: 0 30px 0 30px;
+    justify-content: space-between;
+}
+
+.text-footer {
+    transition: 0.3s;
+    color: #ededed;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.text-footer:hover {
+    color: var(--Cian);
+}
+
