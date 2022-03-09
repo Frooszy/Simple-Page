@@ -74,9 +74,14 @@ header {
 }
 
 .header-block {
+    opacity: 0;
+    transition: 0.5s;
     padding: 30px;
     text-align: center;
-    cursor: pointer;
+}
+
+.header-block-open {
+    opacity: 1;
 }
 
 .sobre {
@@ -90,10 +95,12 @@ header {
     box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
     position: relative;
     z-index: 10;
+    cursor: pointer;
 }
 
 .header-block .sobre:hover {
     background-color: var(--Cian);
+    letter-spacing: 0.1px;
 }
 
 .sobre h2 {
@@ -124,3 +131,35 @@ header {
     color: var(--Cian);
 }
 
+.caixa {
+    display: flex;
+    transition: 0.5s;
+    opacity: 1;
+    padding: 20px 0 0 0;
+    justify-content: center;
+}
+
+.caixa-close {
+    opacity: 0;
+}
+
+.caixa button {
+    transition: 0.6s;
+    border: white;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 2px 5px;
+    font-size: 20px;
+    box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.caixa button:hover {
+    background-color: var(--Cian);
+    letter-spacing: 0.3px;
+}
