@@ -1,7 +1,7 @@
-/* font importing */
+/* Immportação de Fontes */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-/* reseting css rules */
+/* Css */
 * {
   margin: 0px;
   padding: 0px;
