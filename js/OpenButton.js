@@ -1,4 +1,6 @@
 window.onload = function() {
+
+    //Lorem Menu
     
     const Button = document.getElementById('ButtonJs')
     const HeaderBlock = document.getElementById('HeaderBlockJs')
@@ -6,13 +8,21 @@ window.onload = function() {
 
     Button.addEventListener('click', () => {
         HeaderBlock.classList.add('header-block-open')
-        Button.classList.add('caixa-close')
+        Menu.classList.remove('Menu-Hamburger-Open')
     })
 
     Sobre.addEventListener('click', () => {
         HeaderBlock.classList.remove('header-block-open')
-        Button.classList.remove('caixa-close')
-    } )
+    })
 
+    //Hamburger Menu
+
+    const Hamburger = document.getElementById('ImagemJs')
+    const Menu = document.getElementById('MenuHamburgerJs')
+
+    Hamburger.addEventListener('click', () => {
+        Menu.classList.toggle('Menu-Hamburger-Open')
+    })
     
+
 }

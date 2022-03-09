@@ -24,12 +24,60 @@ header {
     font-weight: bold;
 }
 
-.menu ul {
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.catalogo ul {
     display: flex;
     list-style: none;
     align-items: center;
 }
 
-.menu ul li {
+.catalogo ul li {
     padding: 0 30px;
+}
+
+.catalogo {
+    margin-right: 30px;
+}
+
+.Imagem {
+    height: 30px;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.Menu-Hamburger {
+    display: flex;
+    z-index: 1000;
+    transition: 0.5s;
+    padding: 10px 0 10px 0px;
+    border-radius: 5px;
+    background-color: black;
+    position: absolute;
+    top: 80px;
+    right: -115px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+.Menu-Hamburger a {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.Menu-Hamburger-Open {
+    right: 10px;
+}
+
+.Menu-Hamburger ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.Menu-Hamburger li {
+    padding: 10px;
 }
