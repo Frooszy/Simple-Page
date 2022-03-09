@@ -1,0 +1,33 @@
+/* Immportação de Fontes */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* Css */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --orange: #f78b00;
+  --blue: #00285f;
+  --gray: #ededed;
+  --Cian: rgb(122, 207, 233);
+}
+
+html,
+body {
+    background-color: white;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.animation {
+    transition: 0.6s;
+}
+
+.animation:hover {
+    color: var(--Cian);
+}
