@@ -29,6 +29,14 @@ header {
   height: 500px;
 }
 
+.animation {
+    transition: 0.6s;
+}
+
+.animation:hover {
+    color: var(--Cian);
+}
+
 .header {
     display: flex;
     height: 70px;
@@ -44,23 +52,10 @@ header {
     cursor: pointer;
 }
 
-.logo p {
-    transition: 0.3s;
-}
-
-.logo p:hover {
-    color: var(--Cian);
-}
-
 .menu a {
-    transition: 0.3s;
     color: white;
     text-decoration: none;
     font-weight: bold;
-}
-
-.menu a:hover {
-    color: var(--Cian);
 }
 
 .menu ul {
@@ -121,14 +116,9 @@ header {
 }
 
 .text-footer {
-    transition: 0.3s;
     color: #ededed;
     font-weight: bold;
     cursor: pointer;
-}
-
-.text-footer:hover {
-    color: var(--Cian);
 }
 
 .caixa {
